@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Chess Cloud Extension</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>♟️ Live Chess Cloud</h1>
+      <p class="subtitle">Extension Active</p>
+    </div>
+    
+    <div class="content">
+      <div class="status" id="status">
+        <div class="status-indicator"></div>
+        <span>Checking page...</span>
+      </div>
+      
+      <div class="info" id="pageInfo">
+        <p><strong>Page:</strong> <span id="pageTitle">-</span></p>
+        <p><strong>URL:</strong> <span id="pageUrl">-</span></p>
+      </div>
+      
+      <div class="captured-data" id="capturedData">
+        <div class="data-header">
+          <strong>📥 Captured JSON Files</strong>
+        </div>
+        <div class="data-count" id="dataCount">0 files captured</div>
+        <div class="data-list" id="dataList"></div>
+      </div>
+      
+      <div class="actions">
+        <button id="refreshBtn" class="btn btn-primary">Refresh Info</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+
